@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style_vidplay.css" />
+    <script defer src="https://www.youtube.com/iframe_api"></script>
+    <script defer src="../js/youtubevidscript.js"></script>
+    <title>Project: MELT DOWN</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__title">
+        <img src="../img/meltdown_logo_white.png" alt="" />
+      </div>
+      <div class="header__func">
+        <h5>※영상 전체화면 X 분기점 오류 발생※</h5>
+        <button id="refreshBtn">영상이 안 나올 때 클릭</button>
+        <a href="../../index.html"><h6>홈으로</h6></a>
+        <a href="../pages/introduce.html"><h6>뒤로가기</h6></a>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div id="routevid" style="display: none">
+          <img id="routeA" src="../img/routeAthumbnail.png" alt="루트A" />
+          <img id="routeB" src="../img/routeBthumbnail.png" alt="루트B" />
+        </div>
+        <div id="mainvid">
+          <iframe
+            width="1920"
+            height="1080"
+            src="https://www.youtube.com/embed/PHYFkAuOU3o?si=3i31Mgn6a2EGDHUa"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

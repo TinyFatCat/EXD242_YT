@@ -1,0 +1,137 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  box-sizing: border-box;
+  word-break: keep-all;
+  -ms-overflow-style: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  text-decoration-line: none;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  color: rgb(180, 180, 180);
+  font-weight: 600;
+  font-size: 1rem;
+  padding-inline: 1.25rem;
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    padding-left: 0.5rem;
+    height: 100%;
+    img {
+      width: 5.5rem;
+    }
+  }
+  &__func {
+    display: flex;
+    flex-direction: row;
+  }
+  h5 {
+    font-size: 1rem;
+    padding-right: 0.6rem;
+    font-weight: 600;
+    color: gray;
+  }
+  h6 {
+    font-size: 1rem;
+    padding-left: 0.6rem;
+  }
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  color: coral;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.section {
+  background-color: black;
+  background-image: url('../img/tv_bg.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+}
+
+.wrapper {
+  display: block;
+  justify-content: center;
+  color: white;
+  padding: 10rem;
+  padding-block: 3rem;
+  text-align: center;
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding-inline: 20rem;
+    padding-top: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+    padding-inline: 12rem;
+    padding-top: 12rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0.2rem white solid;
+  border-radius: 0.5rem;
+  padding-inline: 10rem;
+  padding-block: 0.75rem;
+  :hover {
+    color: coral;
+    transition-duration: 0.4s;
+    border: 0.2rem coral solid;
+  }
+}
+
+#mainvid {
+  video {
+    margin: 0 auto;
+  }
+}
+
+.controls {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  padding-inline: 20rem;
+}

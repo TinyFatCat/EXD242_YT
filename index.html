@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./src/js/titlechange.js"></script>
+    <title>Project: MELT DOWN</title>
+  </head>
+  <body>
+    <div id="orderedBackgroundSection" class="section">
+      <div class="container">
+        <div class="wrapper">
+          <div id="logo">
+            <img src="./src/img/meltdown_logo_white.png" />
+          </div>
+          <h2>AI 기반 사용자 인터랙티브 2D 애니메이션 프로젝트</h2>
+        </div>
+        <div class="wrapper">
+          <div class="btn">
+            <a href="./src/pages/introduce.html">프로젝트 보기 </a>
+          </div>
+          <!-- <div id="notset" class="btn">제작 과정</div> -->
+        </div>
+        <div class="particle">
+          <video muted autoplay loop>
+            <source src="./src/vid/dustParticle.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="background" id="background1"></div>
+        <div class="background" id="background2"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  word-break: keep-all;
+  -ms-overflow-style: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  text-decoration-line: none;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  background-size: cover;
+  background-color: black;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 99;
+  color: white;
+  margin-inline: 8rem;
+  margin-block: 4rem;
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    padding-left: 0.8rem;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+}
+
+.btn {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  :hover {
+    color: coral;
+    transition-duration: 0.4s;
+  }
+}
+
+#logo {
+  img {
+    width: 60%;
+  }
+}
+
+#notset {
+  opacity: 0.4;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 2s ease-in-out;
+  opacity: 0; /* 초기 투명도 설정 */
+}
+
+/* 현재 이미지가 보이게 할 때 */
+.background.visible {
+  opacity: 1;
+}
+
+.particle {
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: opacity(1);
+  }
+}
+@keyframes slideIn_up {
+  from {
+    transform: translate(0, 2.5rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideIn_down {
+  from {
+    transform: translate(0, -2rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
