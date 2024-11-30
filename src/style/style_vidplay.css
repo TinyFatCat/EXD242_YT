@@ -16,6 +16,7 @@
   -webkit-user-select: none;
   text-decoration-line: none;
   overflow: hidden;
+  letter-spacing: -0.05rem;
 }
 
 ::-webkit-scrollbar {
@@ -147,6 +148,19 @@ button {
 }
 #routevid :hover {
   border: 0.5rem coral solid;
+}
+
+#routetext {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  opacity: 0;
 }
 
 .controls {

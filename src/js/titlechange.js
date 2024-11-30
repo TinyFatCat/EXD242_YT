@@ -4,27 +4,6 @@ const images = [
   './src/img/titlebg2.jpg',
   './src/img/titlebg3.jpg',
 ];
-// background-image: url('./img/tv_bg.jpg');
-
-// // 현재 이미지 인덱스 초기화
-// let currentIndex = 0;
-
-// // 순서대로 배경 이미지 설정 함수
-// function setOrderedBackgroundImage() {
-//   const currentImage = images[currentIndex];
-//   document.getElementById(
-//     'randomImageChange'
-//   ).style.backgroundImage = `url('${currentImage}')`;
-
-//   // 인덱스 증가 및 배열 끝이면 처음으로 돌아가기
-//   currentIndex = (currentIndex + 1) % images.length;
-// }
-
-// // 페이지 로드 시 첫 이미지 설정 및 10초마다 변경
-// window.onload = () => {
-//   setOrderedBackgroundImage();
-//   setInterval(setOrderedBackgroundImage, 10000); // 10초마다 실행
-// };
 
 let currentIndex = 0; // 현재 이미지 인덱스 초기화
 let currentBackground = 0; // 현재 활성화된 배경 레이어

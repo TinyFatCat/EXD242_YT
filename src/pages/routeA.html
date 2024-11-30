@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style_route.css" />
     <link rel="stylesheet" href="../style/css_animation.css" />
+    <title>MELT DOWN : Run Away ...</title>
     <script defer src="../js/vidscript.js"></script>
-    <script defer src="https://www.youtube.com/iframe_api"></script>
-    <title>Project: MELT DOWN</title>
+    <script src="../js/timerReset.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -24,16 +24,14 @@
     <div class="section">
       <div class="container">
         <div id="mainvid">
-          <iframe
-            width="1920"
-            height="1080"
-            src="https://www.youtube.com/embed/duxs0fzUStY?si=grIQfdZv3dTF1uON"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <video id="mainvideo" controls autoplay>
+            <source src="../vid/routeAfin.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="controls">
+            <button id="playPause">Play</button>
+            <input type="range" id="seekBar" value="0" />
+            <button id="muteButton">Mute</button>
+          </div> -->
         </div>
       </div>
     </div>

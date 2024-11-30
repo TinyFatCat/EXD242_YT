@@ -15,6 +15,7 @@
   -ms-user-select: none;
   -webkit-user-select: none;
   text-decoration-line: none;
+  letter-spacing: -0.05rem;
 }
 
 ::-webkit-scrollbar {
@@ -63,22 +64,63 @@ a {
   padding-left: 0.6rem;
 }
 
+.bgimg {
+  position: absolute;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider__column {
+  width: 1px;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.divider__column.animTarget {
+  opacity: 0;
+}
+.divider__column.triggered {
+  opacity: 1;
+  animation: slideIn_down 1s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+
+.green {
+  color: #19f189;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 .section {
-  background-color: black;
+  background-color: #0e0e0e;
 }
 
 .container {
   display: block;
   justify-content: center;
+  animation: slideIn_down 0.75s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+
+#pad1 {
+  padding-bottom: 4rem;
+}
+
+#pad2 {
+  padding-bottom: 4rem;
 }
 
 .wrapper {
   display: block;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   color: white;
   padding: 10rem;
   padding-block: 3rem;
-  text-align: center;
 }
 .wrapper.triggered h1.animTarget {
   opacity: 1;
@@ -93,16 +135,16 @@ a {
   animation: slideIn_down 1s ease-out forwards, fadeIn 1s ease-out forwards;
 }
 .wrapper p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  padding-inline: 20rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
   padding-top: 2rem;
 }
 .wrapper p.animTarget {
   opacity: 0;
 }
 .wrapper h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   padding-inline: 12rem;
   padding-top: 12rem;
 }
@@ -111,17 +153,20 @@ a {
 }
 .wrapper h2 {
   font-size: 1.6rem;
-  color: coral;
 }
 .wrapper h2.animTarget {
   opacity: 0;
 }
 
+.text__wrapper {
+  width: 40vw;
+  margin: 0 auto;
+}
+
 .card__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: center;
-  padding-block: 2rem 10rem;
+  align-items: center;
 }
 .card__wrapper.triggered .animTarget {
   opacity: 1;
@@ -129,39 +174,25 @@ a {
 }
 
 .card {
+  width: 20rem;
+  height: 10rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  text-align: left;
+  text-align: center;
   color: white;
-  border: 0.15rem solid white;
+  background-color: #232323;
   border-radius: 0.75rem;
   padding-inline: 1rem;
   padding-block: 1.5rem;
-  margin-inline: 1rem;
+  margin-inline: 2.5rem;
   margin-block: 1rem;
 }
 .card.animTarget {
   opacity: 0;
 }
 .card h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding-right: 4rem;
-}
-.card h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.8;
-}
-.card h6 {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-hr.solid {
-  border-top: 2px solid white;
-  opacity: 0.5;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .wrapper__desc {
@@ -215,35 +246,77 @@ hr.solid {
 
 #next.wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding-bottom: 10rem;
 }
 #next.wrapper.triggered .animTarget {
   opacity: 1;
-  animation: slideIn_down 1s ease-out forwards, fadeIn 0.5s ease-out forwards;
+  animation: slideIn_down 0.5s ease-out forwards, fadeIn 0.5s ease-out forwards;
+}
+#next.wrapper :hover {
+  color: coral;
 }
 
-.btn {
+#watch.btn {
+  margin: 0;
+  width: 30vw;
+  height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: coral;
-  background-color: black;
+  color: white;
+  background-image: url(../img/pages/thumbnail_watch.webp);
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
   font-size: 2rem;
   font-weight: 600;
-  border: 0.2rem coral solid;
-  border-radius: 0.5rem;
-  padding-inline: 10rem;
-  padding-block: 0.75rem;
 }
-.btn.animTarget {
+#watch.btn.animTarget {
   opacity: 0;
 }
-.btn :hover {
-  color: coral;
-  transition-duration: 0.4s;
-  background-color: coral;
-  border: 0.2rem coral solid;
+#watch.btn h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+#watch.btn p {
+  font-size: 1rem;
+  padding-inline: 3rem;
+}
+
+#process.btn {
+  margin: 0;
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url(../img/pages/thumbnail_process.webp);
+  font-size: 2rem;
+  font-weight: 600;
+}
+#process.btn.animTarget {
+  opacity: 0;
+}
+#process.btn h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+#process.btn p {
+  font-size: 1rem;
+  padding-inline: 3rem;
+}
+
+.text__notice {
+  position: absolute;
+  bottom: 160px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(29, 29, 29);
 }
 
 @keyframes fadeIn {

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style_route.css" />
+    <title>MELT DOWN : Had To ...</title>
     <script defer src="../js/vidscript.js"></script>
-    <script defer src="https://www.youtube.com/iframe_api"></script>
-    <title>Project: MELT DOWN</title>
+    <script src="../js/timerReset.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -23,16 +23,9 @@
     <div class="section">
       <div class="container">
         <div id="mainvid">
-          <iframe
-            width="1920"
-            height="1080"
-            src="https://www.youtube.com/embed/8X-eBMrBZFo?si=8tdAKWjMiLvAZXP-"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <video id="mainvideo" controls autoplay>
+            <source src="../vid/routeBfin.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

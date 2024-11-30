@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <script src="../js/IntersectionObserver.js" defer></script>
-    <title>Project: MELT DOWN</title>
+    <script src="../js/timerReset.js" defer></script>
+    <title>MELT DOWN</title>
   </head>
   <body>
     <div class="header">
@@ -25,112 +26,67 @@
     </div>
     <div class="section">
       <div class="container">
+        <div class="bgimg">
+          <img src="../img/intro1.webp" alt="" />
+        </div>
         <div class="wrapper animTrigger">
           <h1 class="animTarget">
-            사용자의 선택으로 바뀌는 결과와 AI와 제작자가 만드는 새로운 경험
+            사용자의 선택으로 바뀌는 <span class="green">이야기</span>와
+            <br /><span class="green">AI와 제작자</span>가 만드는 새로운 경험
           </h1>
         </div>
-        <div class="wrapper animTrigger">
-          <p class="animTarget">
-            Project: MELT DOWN은 제작 단계에서 AI를 다방면으로 활용하고, 이를
-            통해 사용자의 선택에 따라 스토리의 분기와 결과가 바뀌는 2D
-            애니메이션 필름 프로젝트입니다.
+        <div id="pad1" class="wrapper animTrigger">
+          <p class="text__wrapper animTarget">
+            애니메이션 MELT DOWN은 시청자의 선택에 따라 다른 스토리로 전개되는
+            인터랙티브의 특성과 AI를 활용하여 제작한 1인 프로덕션 2D 애니메이션
+            필름입니다.
           </p>
-          <p class="animTarget">
-            시청자 관점에서는 사용자 선택을 통해 이루어지는 시청 경험 형성을,<br />
-            제작자 관점에서는 온전히 AI로만 창작하는 것이 아닌 전체 제작
-            과정에서 다방면으로 AI를 활용해보는 것을 목적으로 진행되었습니다.
+          <p class="text__wrapper animTarget">
+            시청자 관점에서는 스토리 전개가 변화하는 분기점에서 선택에 따른 각기
+            다른 시청 경험을 가질 수 있으며, 제작자 관점에서는 AI와 제작자가
+            서로 개입하여 아이디어와 아웃풋을 재조합하는 방식의 다양한 실험
+            과정을 거쳐 제작되었습니다.
+          </p>
+          <p class="text__wrapper animTarget">
+            이는 소규모 팀이나 애니메이션 제작 경험이 전무하여도 AI를
+            애니메이션에 활용하는 방안의 기초가 될 수 있을 것으로 기대합니다.
           </p>
         </div>
-        <div class="wrapper animTrigger">
-          <h2 class="animTarget">
-            본 프로젝트에서는 AI를 아래와 같이 여러 파트에서 사용했습니다.
-          </h2>
+        <div id="pad2" class="wrapper animTrigger">
           <div class="card__wrapper animTrigger">
             <div class="card animTarget">
-              <h3>스토리</h3>
-              <h4>
-                최초 시놉시스를 제작자가 AI에게 제공하고, 이를 풀어낸 스토리를
-                다시 수정하고 개선했습니다. 초기에는 AI에게 스토리를 모두
-                맡겼지만, 전부 AI의 자율성에 맡기기보다는 제작자의 생각을
-                확장하고 구체화하는 것으로 방향을 바꾸었습니다.
-              </h4>
+              <h3>
+                인터랙티브 무비의 특성을 이용한 시청자 선택에 따른 스토리 진행
+              </h3>
             </div>
+            <div class="divider__column animTarget"></div>
             <div class="card animTarget">
-              <h3>캐릭터</h3>
-              <h4>
-                제작자가 상상한 이미지를 프롬프트로 구현하고, 만들어진 이미지
-                레퍼런스를 토대로 제작자가 캐릭터를 그립니다. 이 캐릭터를 다시
-                AI를 통해 퀄리티를 올려 가공하고, 이를 제작자가 본인 스타일에
-                맞게 조율하여 다시 옮기는 과정을 거칩니다.
-              </h4>
-            </div>
-            <div class="card animTarget">
-              <h3>배경아트</h3>
-              <h4>
-                배경은 작품 전반의 분위기를 표현하고 묘사하는 중대한 역할이
-                있기에, 다른 파트와 마찬가지로 전문화된 전담 인원이 필요합니다.
-                이에 AI를 활용하여 작품을 묘사할 수 있는 배경을 제작하고,
-                애니메이션에서 사용할 수 있도록 적절히 조정했습니다.
-              </h4>
-            </div>
-            <div class="card animTarget">
-              <h3>음향효과</h3>
-              <h4>
-                본 애니메이션에서 등장하는 모든 소리는 전부 AI로 제작되었습니다.
-                AI를 통해 영상에 맞는, 원하는 음향을 만들고 간단한 보정을 거쳐
-                손쉽게 사운드를 삽입했습니다.
-              </h4>
+              <h3>
+                AI 기술을 여러 파트에 접목해 사용하며 기록된 애니메이션 제작
+                과정
+              </h3>
             </div>
           </div>
         </div>
-        <hr class="solid" />
-        <div class="wrapper__desc animTrigger">
-          <h1 class="animTarget">SYNOPSYS</h1>
-          <h2 class="animTarget">
-            멀지 않은 미래, 강력한 바이러스의 앞에 인류는 무릎을 꿇고 말았다.
-          </h2>
-        </div>
-        <div class="wrapper__desc animTrigger">
-          <p class="animTarget">
-            인류 역사 이래 가장 치명적인 호흡기로 전파되는 바이러스의 등장으로
-            인류는 대혼란에 빠질 수밖에 없었다. 초기에 이루어진 방역과 차단이
-            무색하게 감염자와 사망자가 날이 갈수록 늘어갔고, 화장터에는 이름
-            없는 시신들만이 무더기로 쌓여갔다.
-          </p>
-        </div>
-        <div class="wrapper__desc animTrigger">
-          <p class="animTarget">
-            살아남은 사람들은 두려움에 떨며 목숨을 부지하기 위해 서로 의심하고,
-            피하며, 칼과 몽둥이를 들이 내밀었다. 이웃, 우정, 연인, 모든 관계가
-            흐트러졌고 남은 것은 방독면 속의 가쁜 숨소리가 자아내는
-            침묵뿐이었다.
-          </p>
-        </div>
-        <div class="wrapper__desc animTrigger">
-          <p class="animTarget">
-            시간이 제법 흘렀음에도 혼란스러운 정세는 잠재워질 기세가 보이지
-            않았다. 인류 사회는 이미 수복되기 어려울 정도로 붕괴가 진행된 지
-            오래였다. 수많은 도시와 거리가 폐허가 되어, 생명 하나 없는 고요한
-            무덤이 되었다.
-          </p>
-        </div>
-        <div class="wrapper__desc animTrigger">
-          <p class="animTarget">
-            모든 것들이 무너져내린 세상에서, 사람들은 각자의 방식을 택했다.
-            <br />살아남기 위해 홀로 떠돌거나, <br />소수로 그룹을 맺고
-            다니거나, <br />집단을 만들고 많은 이들을 포섭하거나, <br />무자비한
-            약탈과 살인을 하는 것처럼.
-          </p>
-        </div>
-        <div class="wrapper__desc animTrigger">
-          <h3 class="animTarget">
-            그리고 그 혼란의 도가니 속 어딘가에서, <br />모두가 떠나버린 고요한
-            도시의 폐허를 전전하고 있는 한 사람이 있었다.
-          </h3>
-        </div>
         <div id="next" class="wrapper animTrigger">
-          <a href="vidplay.html" class="btn animTarget">시청하기</a>
+          <a href="before_watch.html" id="watch" class="btn animTarget">
+            <h2>시청하기</h2>
+            <p>
+              AI와 제작자가 함께 만든 애니메이션, 아포칼립스 세계의 폐허를
+              탐색하는 MELT DOWN을 지금 시청하세요. 브라우저 / 유튜브에서 시청
+              가능합니다.
+            </p>
+          </a>
+          <a href="process.html" id="process" class="btn animTarget">
+            <h2>제작 과정</h2>
+            <p>
+              이 애니메이션을 만들기 위해 진행했던 일련의 과정을 담았습니다.
+              어떻게 다양한 부문에서 AI를 활용하고 대응했는지 지금 확인해보세요.
+            </p>
+            <div class="text__notice">
+              * 먼저 애니메이션 시청을 하시는 것을 추천합니다.
+            </div>
+          </a>
         </div>
       </div>
     </div>
